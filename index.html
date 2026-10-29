@@ -1,10 +1,45 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Google</title>
+        <title>Clever</title>
+        <style>
+
+@keyframes marquee {
+        0%   {transform: translateX(100%); }
+        100% {transform: translateX(-10%); }
+        
+}
+
+.marquee-container {
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+        animation: marquee 10s linear infinite;
+}
+
+.marquee-content {
+        display: inline-block;
+}
+
+.bottom {
+        position: fixed;
+        bottom: 10px;
+        background-color: red;
+        width: 100%;
+        text-align: left;
+}
+body {
+    background-color: black;
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+
+        </style>
     </head>
     <body>
-        <h1>here they are</h1>
+        <h1>here are the games!</h1>
         <h2>Games</h2>
         <a href="https://wosu.dino.icu">wosu: osu!standard web version</a> <br>
         <a href="https://webosumania.com">web osu!mania: it's kinda like magic tiles 3 but better</a> <br>
@@ -12,11 +47,11 @@
         <h2>Entertainment</h2>
         <a href="https://xkcd.com">xkcd: webcomic (will keep you entertained for the rest of your life)</a> <br>
         <a href="https://annas-archive.gl">Anna's Archive: EVERY BOOK EVER FOR FREE</a> <br>
+
         <h2>Other</h2>
         <a href="https://famousbirthdays.com">Famous Birthdays: Celebrity info</a> <br>
         <br><p>More coming soon!</p>
         
-
-        <p><small>remember to bookmark this page!</small></p>
+        <div class="bottom"><div class="marquee-container"><div class="marquee-content">remember to bookmark this page!</div></div></div>
     </body>
 </html>
