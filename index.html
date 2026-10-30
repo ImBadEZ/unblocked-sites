@@ -9,7 +9,10 @@
         100% {transform: translateX(-10%); }
         
 }
-
+@keyframes spinX {
+        0%   {transform: rotateX(0deg)}
+        100% {transform: rotateX(360deg)}
+}
 .marquee-container {
         white-space: nowrap;
         overflow: hidden;
@@ -28,14 +31,21 @@
         width: 100%;
         text-align: left;
 }
-body {
-        background-color: black;
-        color: white;
-        margin: auto;
-        text-align: center;
-        font-family: "Exo 2", sans-serif;
+
+.spin {
+    animation: spinX 5s linear infinite;
 }
 
+body {
+    background-color: black;
+    color: white;
+    margin: auto;
+    text-align: center;
+    font-family: "Exo 2", sans-serif;
+}
+h1:hover {
+    animation: spinX 0.5s linear infinite;
+}
 a {
         color: lightblue;
 }
@@ -45,7 +55,7 @@ a {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2">
     </head>
     <body>
-        <h1>here are the games!</h1>
+        <h1>imbadez's crappy game site</h1>
         <h2>Games</h2>
         <a href="https://wosu.dino.icu">wosu: osu!standard web version</a> <br>
         <a href="https://webosumania.com">web osu!mania: it's kinda like magic tiles 3 but better</a> <br>
@@ -62,8 +72,8 @@ a {
         <br><p>More coming soon!</p>
 
 
-        <script src="https://minnit.chat/js/embed.js?c=1793238146" defer></script><span style="display: none;" class="minnit-chat-sembed" data-chatname="https://organizations.minnit.chat/365547028368450/c/Main?embed" data-style="width:50%; height:800px; max-height:90vh;" data-version="1.56">Chat</span><p class="powered-by-minnit"><a href="https://minnit.chat" target="_blank">Chatroom embedded via Minnit Chat</a></p><h2>
+        <script src="https://minnit.chat/js/embed.js?c=1793238146" defer></script><span style="display: none;" class="minnit-chat-sembed" data-chatname="https://organizations.minnit.chat/365547028368450/c/Main?embed" data-style="width:50%; height:800px; max-height:90vh;" data-version="1.56">Chat</span><p class="powered-by-minnit"></p><h2><br>
         
-        <div class="bottom"><div class="marquee-container"><div class="marquee-content">remember to bookmark this page!</div></div></div>
+        <div class="bottom"><div class="marquee-container"><div class="marquee-content"><div class="spin">permanently under construction - bookmark for easy access</div></div></div></div> <!-- i am very sorry for the divs -->
     </body>
 </html>
